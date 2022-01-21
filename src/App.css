@@ -1,38 +1,369 @@
-.App {
-  text-align: center;
+#root{
+    --color-background:   #11103a;
+    --color-front: #1e1d46;
+    --color-lightgray: #a3a9ad;
+    --color-white: #ffff;
+    --color-purple: #bb86fc;
+    --color-blue: #236bfe;
+   }
+body{
+    background-color: #11103a;
+    color: #ffff;
+}
+.containerSearch{
+    
+}
+.searchWrapper{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex: 2;
+    font-size: 28px;
+    font-weight: 900;
+}
+.searchBox{
+    flex: 4;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.inputContainerSearch{
+    height: 100%;
+    padding: 0 0 0 10px;
+    width: fit-content;
+    background-color: #1e1d46;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.searchInput{
+    border: none;
+    color: #fff;
+    width: 300px;
+    background-color: transparent !important;
+}
+.searchInput::-webkit-input-placeholder {
+    opacity: 0.5;
+    color: #fff;
+}
+.searchInput:focus{
+    outline: none;
+}
+.SearchButton{
+    height: 100%;
+    width: 100px;
+    border: none;
+    color: #e1e1e1;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+.SearchButton:hover {
+    transform: scale(1.2);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    margin: 50px 0;
+    width: 400px;
+    height: 100%;
+    display: flex;
+}
+.leftContainer{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #1e1d46;
+    padding: 0 5px;
+}
+.todayContainer{
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.iconContainer{
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+.todayTextContainer{
+    margin-left: 12px;  
+}
+.todayText{
+    font-size: 20px;
+    font-weight: 400;
+}
+.todayDate{
+    font-size: 9px;
+    letter-spacing: 0.5px;
+}
+.temperatureContainer{
+    margin: 40px 0;
+}
+.tempandDegTextWrapper{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.temperature{
+    font-size: 70px;
+}
+.degreeText{
+    margin-left: 5px;
+    font-size: 25px;
+    padding-top: 4%;
+}
+.locationandMoodContainer{
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.locationWrapper{
+
+}
+.locationText{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.moodWrapper{
+    margin-top: 10px;
+    color: #a3a9ad;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mood{
+    font-size: 12px;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot{
+    font-size: 12px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feels{
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parameterContainerOne{
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #a3a9ad;
+}
+img{
+    height: 30px;
+}
+.speedWrapper{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.speedIcon{
+
+}
+.speedText{
+    margin-left: 8px;
+}
+.humidityWrapper{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.humidityIcon{
+
+}
+.humidityText{
+    margin-left: 8px;
+}
+.pressureWrapper{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.pressureIcon{
+
+}
+.pressureText{
+    margin-left: 8px;
+}
+.parameterContainerTwo{
+    margin: 40px 0 40px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #a3a9ad;
+}
+.sunRiseWrapper{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.sunRiseIcon{
+
+}
+.sunRiseText{
+    margin-left: 8px;
+}
+.sunSetWrapper{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.sunSetIcon{
+
+}
+.sunSetText{
+    margin-left: 8px;
+}
+.nightWrapper{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.nightIcon{
+
+}
+.nightText{
+    margin-left: 8px;
+}
+.nextFiveDayContainer{
+    margin: 30px 5px;
+    padding-left: 15px;
+}
+.nextFiveDayTextWrapper{
+
+}
+.nextFiveDayText{
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.daysContainer{
+    margin-top: 20px;
+}
+.daysWrapper{
+    font-size: 9px;
+}
+.dayOneWrapper{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.dayOneText{
+    width: 30px;
+}
+.dash{
+    height: 0.5px;
+    background-color: #a3a9ad;
+    width: 100%;
+    flex: 4;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+.dayOneTemp{
+    width: 40px;
+}
+.dayTwoWrapper{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.dayTwoText{
+    width: 30px;
+}
+.dayTwoTemp{
+    width: 40px;
+}
+.dayThreeWrapper{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.dayThreeText{
+    width: 30px;
+}
+.dayThreeTemp{
+    width: 40px;
+}
+.dayFourWrapper{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.dayFourText{
+    width: 30px;
+}
+.dayFourTemp{
+    width: 40px;
+}
+.dayFiveWrapper{
+    display: flex;
+    align-items: center;
+}
+.dayFiveText{
+    width: 30px;
+}
+.dayFiveTemp{
+    width: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 480px) { 
+    .leftContainer{
+        margin-top: 50px; 
+    }
+    .searchWrapper{
+        flex-direction: column;
+    }
+    .searchBox{
+        margin-top: 30px;
+        height: 50px;
+    }
+    .inputContainerSearch{
+        height: 50px;
+        width: 100%;
+    }
+    .searchInput{
+        width: 250px;
+        font-size: 17px;
+    }
+    .searchInput::-webkit-input-placeholder {
+        font-size: 16px;
+   }
+   .SearchButton{
+    font-size: 14px;
+    margin-right: 10px;
+   }
 }
